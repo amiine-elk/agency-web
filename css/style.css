@@ -1,0 +1,246 @@
+/* Start Global Roles */ 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {scroll-behavior: smooth;}
+body {font-family: 'Montserrat', sans-serif;}
+ul {list-style: none;}
+a {text-decoration: none;}
+button {outline: none; border: none;}
+input {outline: none; border: none;}
+
+/* End Global Roles */ 
+
+/* start Navigation ===============================================  */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
+    padding: 12px;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0 22px;
+    display: flex;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.6s ease-out;
+    color: #000000;
+}
+nav ul li a:hover {
+    background-color: #09528e;
+    color: #fff;
+    box-shadow: 5px 10px 30px rgba(0, 81, 134, 0.3);
+}
+.active {
+    background-color: #00b6e1;
+    color: #fff;
+    box-shadow: 5px 10px 30px rgba(0, 223, 253, 0.3);
+}
+/* end Navigation ================================================ */ 
+
+/* Start  header  ================================================ */ 
+.main {
+    width: 100%;
+    height: 768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/header-bg.png);
+}
+.main-heading {
+    width: 500px;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    transform: translate(-17%, -50%);
+}
+.main-heading h1 {
+    font-size: 43px;
+    letter-spacing: 2px;
+    color: #0c0c0c;
+}
+.main-heading h1 span {
+    color: #00b6e1;
+}
+.main-heading p {
+    font-size: 1.2rem;
+    color: rgb(65, 65, 65);
+}
+.main-btns {margin-top: 35px;}
+.main-btn {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b6e1;
+    box-shadow: 5px 10px 30px rgba(0, 223, 253, 0.3);
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.6s ease-out;
+}
+.main-btn:hover {
+    background-color: #09528e;
+    color: #fff;
+    box-shadow: 5px 10px 30px rgba(0, 81, 134, 0.3);
+}
+/* end header  ================================================ */ 
+
+/* Start  About  ================================================ */ 
+.about {
+    width: 100%;
+    height: 110vh;
+    background-color: #09528e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+.about-img {
+    width: 50%;
+}
+.about-img img {width: 500px}
+.about-text {
+    width: 45%;
+    color: #fff;
+}
+.about-text h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.about-text h3 {
+    color: #ff4a17;
+    margin: 30px 0 25px 0;
+}
+.about-text p {
+    font-size: 1.1rem;
+    color: #e2e2e2;
+    margin: 0 0 20px 0;
+}
+.main-btn:hover {
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.384);
+}
+/* End  About  ================================================ */ 
+
+/* Strat  Team  ================================================ */ 
+.team {
+    width: 100%;
+    height: 120vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+}
+.team-heading {
+    text-align: center;
+    margin: 20px 0;
+}
+.team-heading h1 {
+    color: #000;
+    font-size: 2.3rem;
+}
+.team-heading p{
+    color: rgb(20, 20, 20);
+    font-size: 1.1rem;
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-box {
+    width: 340px;
+    background-color: #fff;
+    height: 490px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.team-box img {
+    width: 100%;
+    height: 100%;
+}
+.team-call {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.team-call h4 {
+    margin-top: -12px;
+    padding: 20px;
+}
+/* End  Team  ================================================ */ 
+
+/* Start  Contact  ================================================ */ 
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #09528e;
+    margin-top: 80px;
+    padding-bottom: 70px;
+}
+.contact h1 {
+    margin-top: 80px;
+    color: #fff;
+}
+.contact p {
+    color: rgb(243, 243, 243);
+}
+.contact form {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgb(201, 201, 201);
+    color: #fff;
+    border-radius: 5px;
+}
+.contact form textarea {height: 150px;}
+.contact form button {
+    border-radius: 5px;
+    width: 90%;
+    height: 45px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #09528e 20%, #00b6e1);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* End  Contact  ================================================ */ 
